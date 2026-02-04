@@ -1,0 +1,17 @@
+PP-OCRv1发布于2020年9月
+PP-OCRv2发布于2021年9月，
+PP-OCRv3发布于2022年6月，
+PP-OCRv4发布于2023年9月，
+PP-OCRv5发布于2025年随PaddleOCR 3.0 + 版本发布
+
+v1版本分为3个子模型：文本检测（DBnet）、检测框调整和文本识别（CRNN）
+文本检测模块基于可微分二值化（DB）分割网络，骨干网络使用MobileNetV3 large x0.5，检测头内部通道减少到96，
+最终输出文本区域的概率图（probability map）和阈值图（threshold map），通过简单后处理即可得到文本检测框
+
+检测框调整模块由 “几何变换校正” 和 “文本方向分类” 两部分组成，选用选用 MobileNetV3 small x0.35 作为骨干网络
+
+文本识别模块是 PP-OCR 系统的核心输出环节，基于 CRNN（卷积循环神经网络）架构，核心目标是将检测框调整后的标准化文本图像，精准转换为可编辑的文本字符
+模块采用经典 CRNN 架构（如图 10 所示），分为三大核心部分，协同完成序列文本识别：
+卷积层（Convolutional Layers）：基于轻量骨干网络提取文本图像的空间特征，生成多尺度特征图；
+循环层（Recurrent Layers）：对卷积层输出的特征序列进行时序建模，捕捉字符间的上下文依赖关系；
+转录层（Transcription Layer）：采用 CTC（Connectionist Temporal Classification）损失函数，解决预测序列与标签序列长度不一致的问题，无需逐字符对齐标注，降低训练复杂度。

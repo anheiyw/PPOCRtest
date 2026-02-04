@@ -1,51 +1,67 @@
-吳嘉豪
-男/2002.08
- YuZhu-www
-Phone Number:15751012850
-Email:1586378509@qq.com
-教育背景
-江南大学（教育部直属211）
-2023.09-2026.07
-获得研究生学业奖学金
-迁移学习领域论文发表：EI期刊《IEEETransactions on Artificial Intelligence》；CSCD核心期刊《计算机科学》
-江苏大学（江苏省省属高校）
-2019.09-2023.07
-获得学习优秀奖学金，并被评为"院级三好学生"。
-实习经验
-友达光电-AOI视觉开发A+实习生
-2025.06-2025.08
-◼负责实现基于opencv的产线图像采集预处理系统，实现定位、裁剪和分辨率调整等预处理功能；
-◼负责对多项缺陷设计专门的opencv预处理算法并制作可用数据集，用于模型训练；
-实现基于ResNet的图像分类系统和基于YOLO的缺陷检测系统，并基于TCP/TP协议实现产线和云端部署，使用
-Mysql进行数据记录和人工复核，实现数据回流。
-◼实现系统的PYQT界面设计与封装打包，便于操作人员使用。
-项目经历
-条码缺陷效果生成项目
-Opencv Github Pyqt Vgg/Resnet
-2024.04-2025.05
-项目描述：
-为升级二维码修复模型，企业需要大量不同类型的现实场景受损条码图片。对不同的受损类型，需分别设计对
-应的图像处理算法，并统一上传到github仓库。最终提供企业所需图片数据、专利报告和可视化操作界面。
-工作内容：
-
-负责使用StableDiffusion处理示例图片，提取各式现实背景用于理想图的背景融合；
-负责使用风格迁移和深度背景融合技术/opencv泊松融合技术生成“现实场景条码”；
-负责复现github开源图像算法并结合opencv进行图像处理，生成企业所需的多种受损类型样式；
-负责使用多线程技术优化代码运行效率，使用github管理项目版本，完成代码交接；
-最终生成了约三十万张可用样本，并设计了GUI的exe文件。
-钢材缺陷检测项目
-Yolo Faster-RCNN Kaggle
-2023.10-2024.02
-■项目描述：
-企业需要在当前只有极少标注样本的现状下，检测钢材内表面的多种受损缺陷，降低人工成本，增加良品率。
-◼ 工作内容：
-负责在kaggle上寻找相似特征的数据集，并分别训练Yolo模型和Faster-RCNN模型作为预训练模型。
-负责用预训练模型筛选现场采集的数据，并精细化标注，得到样本数据，最终得到map50为0.65的检测模型。
-相关技能
-◼ 代码基础：熟悉Python、C++基础和C++11新特性。熟悉多线程并发，了解基本数据结构和socket编程。
-◼数据库：熟练使用Mysql、SQL及DataGrip。
-
-深度学习：熟悉Resnet、VGG、RCNN系列以及YOLO系列等分类、检测和分割模型的训练和部署。
-常用库：熟悉Opencv图像处理库、numpy库、matplotlib库、tkinter库和Pytorch框架。
-工具：熟悉使用Git项目管理及构建工具，QT界面开发，GCC/G++编译器，GDB调试工具和CMake工具。
-◼ 证书：英语六级。
+International Journal of Computer Vision (2024) 132:654–672
+https://doi.org/10.1007/s11263-023-01892-w
+0
+Check for
+updates
+Source-Free Domain Adaptation via Target Prediction Distribution
+Searching
+Song Tang'2 . An Chang' · Fabian Zhang3 · Xiatian Zhu4 · Mao Ye5 · Changshui Zhang6,7,8,9
+Received: 25 November 2022 / Accepted: 18 August 2023 / Published online: 4 October 2023
+© The Author(s) 2023
+Abstract
+Existing Source-Free Domain Adaptation (SFDA) methods typically adopt the feature distribution alignment paradigm via
+mining auxiliary information (eg., pseudo-labelling, source domain data generation). However, they are largely limited due
+to that the auxiliary information is usually error-prone whilst lacking effective error-mitigation mechanisms. To overcome
+this fundamental limitation, in this paper we propose a novel Target Prediction Distribution Searching (TPDS) paradigm.
+Theoretically, we prove that in case of sufficient small distribution shift, the domain transfer error could be well bounded.
+To satisfy this condition, we introduce a flow of proxy distributions that facilitates the bridging of typically large distribution
+shift from the source domain to the target domain. This results in a progressive searching on the geodesic path where
+adjacent proxy distributions are regularized to have small shift so that the overall errors can be minimized. To account for the
+sequential correlation between proxy distributions, we develop a new pairwise alignment with category consistency algorithm
+for minimizing the adaptation errors. Specifically, a manifold geometry guided cross-distribution neighbour search is designed
+to detect the data pairs supporting the Wasserstein distance based shift measurement. Mutual information maximization is
+then adopted over these pairs for shift regularization. Extensive experiments on five challenging SFDA benchmarks show that
+our TPDS achieves new state-of-the-art performance. The code and datasets are available at https://github.com/tntek/TPDS.
+Keywords Domain adaptation . Distribution searching · Geodesic path . Wasserstein distance · Pairwise alignment
+Communicated by Yasuyuki Matsushita.
+ Xiatian Zhu
+xiatian.zhu@ surrey.ac.uk
+3
+Department of Information Technology and Electrical
+ Mao Ye
+Engineering (D-ITET), Eidgenössische Technische
+cvlab.uestc@gmail.com
+Hochschule (ETH) Zürich, Zürich, Switzerland
+Song Tang
+4
+Surrey Institute for People-Centred Artificial Intelligence, and
+song.tang@uni-hamburg.de
+Centre for Vision, Speech and Signal Processing (CVSSP),
+An Chang
+University of Surrey, Guildford, UK
+Cchangan666@gmail.com
+School of Computer Science and Engineering, University of
+Fabian Zhang
+Electronic Science and Technology of China, Chengdu, China
+fabzhang @ethz.ch
+6
+Institute for Artificial Intelligence, Tsinghua University
+Changshui Zhang
+(THUAI), Beijing, China
+zcs @ mail.tsinghua.edu.cn
+へ
+State Key Lab of Intelligent Technologies and Systems,
+Beijing, China
+Institute of Machine Intelligence (IMI), University of
+Shanghai for Science and Technology, Shanghai, China
+8
+Beijing National Research Center for Information Science
+Technical Aspects of Multimodal Systems (TAMS) Group,
+and Technology (BNRist), Beijing, China
+2
+Department of Informatics, Universitit Hamburg, Hamburg,
+9
+Department of Automation, Tsinghua University, Beijing,
+Germany
+China
+Springer

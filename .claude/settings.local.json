@@ -6,7 +6,13 @@
       "Bash(git pull:*)",
       "Bash(where:*)",
       "Bash(ls:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(git commit:*)",
+      "Bash(dir:*)",
+      "mcp__web-search-prime__webSearchPrime",
+      "mcp__web-reader__webReader",
+      "WebSearch",
+      "Bash(\"C:\\\\Users\\\\Temp\\\\AppData\\\\Roaming\\\\Python\\\\Python313\\\\Scripts\\\\buildozer.exe\":*)"
     ]
   }
 }

@@ -14,3 +14,20 @@ __pycache__/
 
 # Claude settings
 .claude/settings.local.json
+
+# Model files (too large for git)
+testmodel/
+models/
+
+# Buildozer build files
+.bin/
+buildozer/
+
+# PDF files
+*.pdf
+
+# APK files
+bin/*.apk
+
+# Large files
+*.pdiparams
